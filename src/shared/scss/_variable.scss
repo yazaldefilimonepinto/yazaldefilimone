@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,300;1,400&family=Noto+Sans:wght@400;500;600&family=Poppins:wght@600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,300;1,400&family=Noto+Sans:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
 :root {
   --first-color: rgb(104, 18, 243);
@@ -7,10 +7,11 @@
   --text-color-alt: ;
   --title-color: #fff;
   --bg-color: rgb(13, 17, 26);
+  --body-color: rgb(13, 17, 26);
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
-  --code-font: "IBM Plex Mono", monospace;
-  --second-font: "Noto Sans", sans-serif;
+  --body-font: 'Poppins', sans-serif;
+  --code-font: 'IBM Plex Mono', monospace;
+  --second-font: 'Noto Sans', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
