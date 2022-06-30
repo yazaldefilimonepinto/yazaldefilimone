@@ -1,0 +1,114 @@
+.header {
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  padding: 0px 3px;
+}
+.menu_container {
+  //   @media screen and (max-width: 750px) {
+  // position: absolute;
+  //   }
+  position: relative;
+}
+.menu_list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  @media screen and (max-width: 750px) {
+    position: absolute;
+    top: 2.5rem;
+    right: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    background: var(--bg-color);
+    padding: 0.8rem;
+    // box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--text-color);
+    border-radius: 0.3rem;
+    transition: 0.2s;
+    transform-origin: right top;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8) translateZ(0px);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+  }
+}
+.logo {
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  > span {
+    // color: var(--first-color);
+  }
+}
+.menu_link {
+  transition: 0.4s;
+  color: var(--text-color);
+  padding: 0.2rem 0.5rem;
+  &:hover {
+    color: #fff;
+  }
+  @media screen and (max-width: 750px) {
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+}
+.menu_item {
+  // @media screen and (max-width: 750px) {
+  //   width: 100%;
+  //   padding: 0.7rem 1rem;
+  //   &:hover {
+  //     background-color: rgba(0, 0, 0, 1);
+  //   }
+  // }
+}
+.hamburger {
+  display: none;
+  @media screen and (max-width: 750px) {
+    display: block;
+  }
+
+  > span {
+    display: block;
+    color: #fff;
+    width: 30px;
+    border-top: 2px solid;
+    &::after,
+    &::before {
+      transition: 0.4s;
+
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      position: relative;
+    }
+  }
+}
+
+.active {
+  border-top-color: transparent !important;
+  &::before {
+    transform: rotate(135deg);
+  }
+
+  &::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+.showMenu {
+  transform-origin: right top;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
