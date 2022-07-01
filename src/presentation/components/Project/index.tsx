@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { Card } from '../Card';
 
 import styles from './styles.module.scss';
 
@@ -62,6 +63,13 @@ export const Project: FunctionComponent = () => {
           </div>
         </div>
       </header>
+
+      <section className={styles.project_container}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </section>
     </section>
   );
 };

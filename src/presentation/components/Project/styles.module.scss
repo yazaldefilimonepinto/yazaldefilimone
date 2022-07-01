@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 680px) {
+    gap: 1rem;
+  }
 }
 
 .title_container {
@@ -64,6 +68,8 @@
 }
 .modal_search {
   position: absolute;
+  background: var(--body-color);
+
   top: 3.3rem;
   right: 0px;
   border: 1px solid var(--text-color);
@@ -106,11 +112,15 @@
   top: 2rem;
   z-index: 999;
   transition: 0.2s;
-  transform-origin: left top;
+  transform-origin: left bottom;
+  @media screen and (max-width: 680px) {
+    top: -9rem;
+  }
   opacity: 0;
   visibility: hidden;
   transform: scale(0.8) translateZ(0px);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+  background: var(--body-color);
   > span {
     display: block;
     width: 1rem;
@@ -138,4 +148,15 @@
   opacity: 1;
   visibility: visible;
   transform: none;
+}
+.project_container {
+  padding: 2rem 0px;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  place-items: center;
+  justify-content: center;
+  @media screen and (max-width: 680px) {
+    grid-template-columns: 100%;
+  }
+  gap: 1rem;
 }
