@@ -101,7 +101,7 @@
 }
 .question {
   position: absolute;
-  width: 30ch;
+  width: 25ch;
   left: 0px;
   top: 2rem;
   z-index: 999;
@@ -121,6 +121,7 @@
   }
   > p {
     padding: 0.8rem;
+    font-size: var(--small-font-size);
   }
   border-radius: 0.4rem;
   border: 1px solid var(--text-color);
