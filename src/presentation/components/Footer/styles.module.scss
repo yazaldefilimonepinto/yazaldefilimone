@@ -1,0 +1,38 @@
+.footer {
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.content {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    // max-width: 400px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: var(--small-font-size);
+
+      &:hover {
+        color: var(--first-color);
+      }
+    }
+    i {
+    }
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copy {
+  font-size: var(--small-font-size);
+  // max-width: 25ch;
+}
