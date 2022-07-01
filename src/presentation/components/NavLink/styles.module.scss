@@ -1,0 +1,16 @@
+.link {
+  transition: 0.4s;
+  color: var(--text-color);
+  padding: 0.2rem 0.5rem;
+  &:hover {
+    color: var(--first-color);
+  }
+  @media screen and (max-width: 750px) {
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+}
+.active_link {
+  color: var(--first-color);
+}
