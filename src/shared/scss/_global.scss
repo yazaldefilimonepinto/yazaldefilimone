@@ -77,6 +77,9 @@ button {
   gap: 1.5rem;
 }
 
+.section {
+  padding: 2rem 0 4rem;
+}
 .header {
   width: 100%;
   position: fixed;
@@ -84,7 +87,4 @@ button {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-}
-.h-5 {
-  padding: 4rem 0px;
 }
