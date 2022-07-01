@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export const Hero: FunctionComponent = () => {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} section`}>
       <div className={styles.container}>
         <span className={styles.happy}>Happy Friday!</span>
         <span className={styles.hello}> </span>
@@ -17,6 +17,10 @@ export const Hero: FunctionComponent = () => {
           <span className={styles.style}>
             learning creating teaching <i className="ri-rocket-2-fill"></i>
           </span>
+        </span>
+        <span className={styles.local}>
+          <i className="ri-map-pin-line"></i>
+          Inhambane Ceu, Mocambique
         </span>
       </div>
 
