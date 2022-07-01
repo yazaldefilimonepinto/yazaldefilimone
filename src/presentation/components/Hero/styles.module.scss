@@ -1,0 +1,57 @@
+.hero {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  // gap: 0.2rem;
+  > h1 {
+    font-size: var(--big-font-size);
+    // font-family: 'Inter';
+    margin: 0px;
+    font-weight: 600;
+  }
+}
+.style {
+  color: var(--first-color);
+}
+.happy {
+  color: var(--title-color);
+  font-size: var(--big-font-size);
+  font-weight: 600;
+}
+.hello {
+  font-size: var(--big-font-size);
+
+  font-weight: 500;
+  // line-height: 3.2rem;
+}
+.flow,
+.work {
+  font-size: var(--h3-font-size);
+  // margin-top: 1rem;
+}
+.flow {
+  i {
+    letter-spacing: 0px;
+  }
+}
+
+.content {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    // max-width: 400px;
+    i {
+      font-size: 1.5rem;
+      &:hover {
+        color: var(--first-color);
+      }
+    }
+  }
+}
