@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  > div {
+    position: relative;
+    > button {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: var(--first-color);
+      }
+    }
+  }
+}
+.search_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.input {
+  display: flex;
+  border: 1px solid var(--text-color);
+  padding: 0.5em;
+  border-radius: 0.3rem;
+  > input {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    padding: 0.2rem;
+  }
+  > i {
+    padding: 0.2rem;
+  }
+}
+
+.button_search {
+  transition: 0.3s;
+  padding: 0.8rem 1rem;
+  border-radius: 0.3rem;
+  background: var(--first-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  i {
+    font-size: var(--normal-font-size);
+  }
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
+}
+.modal_container {
+  position: relative;
+}
+.modal_search {
+  position: absolute;
+  top: 3.3rem;
+  right: 0px;
+  border: 1px solid var(--text-color);
+  border-radius: 0.4rem;
+  padding: 0.4rem 0px;
+  transition: 0.2s;
+  transform-origin: right top;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8) translateZ(0px);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+  > span {
+    color: var(--first-color);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    > li {
+      cursor: pointer;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      width: 14rem;
+      border-radius: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: 0.4s;
+      &:hover {
+        color: var(--first-color-alt);
+      }
+    }
+  }
+}
+.question {
+  position: absolute;
+  width: 30ch;
+  left: 0px;
+  top: 2rem;
+  z-index: 999;
+  transition: 0.2s;
+  transform-origin: left top;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8) translateZ(0px);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+  > span {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(45deg);
+    background-color: var(--first-color);
+    z-index: -11;
+  }
+  > p {
+    padding: 0.8rem;
+  }
+  border-radius: 0.4rem;
+  border: 1px solid var(--text-color);
+}
+
+.showModal {
+  transform-origin: right top;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.showModalQues {
+  transform-origin: left top;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
