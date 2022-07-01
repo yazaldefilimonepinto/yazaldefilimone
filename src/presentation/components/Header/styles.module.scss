@@ -1,5 +1,8 @@
 .header {
-  backdrop-filter: saturate(180%) blur(20px);
+  // backdrop-filter: saturate(180%) blur(20px);
+
+  // backdrop-filter: saturate(180%) blur(15px);
+  // border-bottom: 1px solid rgba(204, 204, 204, 0.2);
 }
 
 .nav {
@@ -40,10 +43,20 @@
   }
 }
 .logo {
-  color: var(--first-color);
+  // color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
   font-size: var(--h3-font-size);
   > span {
     // color: var(--first-color);
+  }
+  > svg {
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: var(--first-color);
   }
 }
 .menu_link {
@@ -51,7 +64,7 @@
   color: var(--text-color);
   padding: 0.2rem 0.5rem;
   &:hover {
-    color: #fff;
+    color: var(--first-color);
   }
   @media screen and (max-width: 750px) {
     &:hover {
