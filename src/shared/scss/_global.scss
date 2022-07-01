@@ -88,3 +88,11 @@ button {
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
+.title {
+  font-size: var(--h1-font-size);
+  > i {
+    margin: 0px;
+    padding: 0.5rem;
+    font-weight: 500;
+  }
+}
