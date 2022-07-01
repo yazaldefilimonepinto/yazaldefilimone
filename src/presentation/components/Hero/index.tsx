@@ -18,13 +18,13 @@ export const Hero: FunctionComponent = () => {
             learning creating teaching <i className="ri-rocket-2-fill"></i>
           </span>
         </span>
+
         <span className={styles.local}>
-          <i className="ri-map-pin-line"></i>
-          Inhambane Ceu, Mocambique
+          Inhambane Ceu, Mocambique <i className="ri-map-pin-line"></i>
         </span>
       </div>
 
-      <div className={styles.content}>
+      {/* <div className={styles.content}>
         <ul>
           <li>
             <a href="">
@@ -42,7 +42,7 @@ export const Hero: FunctionComponent = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </section>
   );
 };
