@@ -1,11 +1,12 @@
+import { Hero } from '@/presentation/components/Hero';
 import React, { FunctionComponent } from 'react';
 
 //import styles from './Home.module.css';
 
 export const Home: FunctionComponent = () => {
   return (
-    <div>
-      <h2>Home</h2>
-    </div>
+    <article className="container h-5">
+      <Hero />
+    </article>
   );
 };
