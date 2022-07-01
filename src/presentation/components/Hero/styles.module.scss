@@ -3,6 +3,7 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 1rem;
+  padding: 4rem 0px;
 }
 .container {
   display: flex;
@@ -53,5 +54,14 @@
         color: var(--first-color);
       }
     }
+  }
+}
+.local {
+  font-size: var(--normal-font-size);
+  padding: 0.5rem 0px;
+  i {
+    font-size: 1.2rem;
+    color: var(--first-color);
+    padding: 0.5rem;
   }
 }
