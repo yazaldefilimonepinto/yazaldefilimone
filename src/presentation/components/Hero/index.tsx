@@ -11,8 +11,10 @@ export const Hero: FunctionComponent = () => {
     const currentDate = new Date();
     const index = currentDate.getDay();
     SetWeek(weeks[index]);
+    
   }
   React.useEffect(() => handlerWeek, []);
+  console.log(week)
   return (
     <section className={`${styles.hero} section`}>
       <div className={styles.container}>
