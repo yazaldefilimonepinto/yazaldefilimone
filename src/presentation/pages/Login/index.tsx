@@ -1,11 +1,11 @@
 import { Form } from '@/presentation/components/Form';
 import React, { FunctionComponent } from 'react';
 
-//import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 export const Login: FunctionComponent = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Form />
     </div>
   );
