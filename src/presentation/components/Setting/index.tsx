@@ -1,11 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import { Colors } from '@/presentation/components/Colors';
+import { ModalContainer } from '@/presentation/components/ModalContainer';
+import { Newsletter } from '@/presentation/components/Newsletter';
 
 import styles from './styles.module.scss';
 
 export const Setting: FunctionComponent = () => {
   const [active, SetActive] = React.useState(false);
   const [color, SetColor] = React.useState(false);
+  const [newsletter, SetNewsletter] = React.useState(false);
 
   function handlerActive() {
     SetActive(!active);
@@ -13,6 +16,9 @@ export const Setting: FunctionComponent = () => {
   }
   function handlerColor() {
     SetColor(!color);
+  }
+  function handlerNewsletter() {
+    SetNewsletter(!newsletter);
   }
 
   return (
@@ -37,9 +43,13 @@ export const Setting: FunctionComponent = () => {
             <Colors active={color} SetActive={SetColor} />
           </li>
           <li className={styles.action_container}>
-            <button className={styles.action}>
+            <button className={styles.action} onClick={handlerNewsletter}>
               <i className="ri-mail-send-fill"></i>
             </button>
+
+            <ModalContainer active={newsletter} SetActive={SetNewsletter}>
+              <Newsletter SetActive={SetNewsletter} />
+            </ModalContainer>
           </li>
         </ul>
       </div>
