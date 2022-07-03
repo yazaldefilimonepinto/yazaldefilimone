@@ -4,15 +4,12 @@ import styles from './styles.module.scss';
 import { getWeekOfMonth, getWeek } from 'date-fns';
 
 export const Hero: FunctionComponent = () => {
-  const [week, SetWeek] = React.useState('');
   const weeks = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-  function handlerWeek() {
-    const currentDate = new Date();
-    const index = currentDate.getDay();
-    SetWeek(weeks[index]);
-  }
-  React.useEffect(() => handlerWeek, []);
+  const currentDate = new Date();
+  const index = currentDate.getDay();
+  let week = weeks[index];
+
   return (
     <section className={`${styles.hero} section`}>
       <div className={styles.container}>
