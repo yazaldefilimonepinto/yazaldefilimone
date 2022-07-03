@@ -70,3 +70,9 @@
   visibility: visible;
   transform: none;
 }
+.action_container {
+  position: relative;
+}
+.actionColor {
+  color: var(--first-color) !important;
+}
