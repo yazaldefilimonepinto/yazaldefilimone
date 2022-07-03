@@ -17,7 +17,10 @@ export const Hero: FunctionComponent = () => {
         <span className={styles.hello}> </span>
         <h1 className={styles.name}>I am Yazalde Filimone</h1>
         <span className={styles.work}>
-          Software Developer at <span className={styles.style}>Reaktor</span>
+          Software Developer at{' '}
+          <a href="https://rgsistemas.com.br/" target="_blank" className={styles.style}>
+            RG Sistemas
+          </a>
         </span>
         <span className={styles.flow}>
           Following the flow of{' '}
