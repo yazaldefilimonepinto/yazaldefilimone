@@ -6,6 +6,7 @@ import { AboutMe } from '@/presentation/pages/AboutMe';
 import { LearningJournal } from '@/presentation/pages/LearningJournal';
 import { Blog } from '@/presentation/pages/Blog';
 import { Footer } from '@/presentation/components/Footer';
+import { Login } from '@/presentation/pages/Login';
 
 export const Routes: FunctionComponent = () => {
   return (
@@ -16,6 +17,7 @@ export const Routes: FunctionComponent = () => {
         <Route path="/aboutMe" element={<AboutMe />} />
         <Route path="/learning-journal" element={<LearningJournal />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/login" element={<Login />} />
       </Routers>
       <Footer />
     </BrowserRouter>
