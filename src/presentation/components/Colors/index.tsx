@@ -13,17 +13,15 @@ export const Colors: FunctionComponent<ColorsProps> = ({ active, SetActive }) =>
     blue: 230,
     pink: 340,
   };
-  // document.body.style.setProperty('--color', 'green');
 
-  /*
- 
-  
-  HSL color mode 
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  */
-
-  function handlerColor() {
+  function handlerColor(hue: number) {
+    changeColor(hue);
     SetActive(!active);
+  }
+  function changeColor(hue: number) {
+    const html = document.querySelector('html');
+    html?.style.setProperty('--hue-color', String(hue));
+    console.log(html?.style.getPropertyValue('--hue-color'));
   }
 
   return (
@@ -31,22 +29,22 @@ export const Colors: FunctionComponent<ColorsProps> = ({ active, SetActive }) =>
       <span
         style={{ backgroundColor: `hsl(${hueColor.purple}, 69%, 61%)` }}
         className={styles.color}
-        onClick={handlerColor}
+        onClick={() => handlerColor(hueColor.purple)}
       ></span>
       <span
         style={{ backgroundColor: `hsl(${hueColor.green}, 69%, 61%)` }}
         className={styles.color}
-        onClick={handlerColor}
+        onClick={() => handlerColor(hueColor.green)}
       ></span>
       <span
         style={{ backgroundColor: `hsl(${hueColor.blue}, 69%, 61%)` }}
         className={styles.color}
-        onClick={handlerColor}
+        onClick={() => handlerColor(hueColor.blue)}
       ></span>
       <span
         style={{ backgroundColor: `hsl(${hueColor.pink}, 69%, 61%)` }}
         className={styles.color}
-        onClick={handlerColor}
+        onClick={() => handlerColor(hueColor.pink)}
       ></span>
     </div>
   );
