@@ -4,10 +4,12 @@ import { ModalContainer } from '@/presentation/components/ModalContainer';
 import { Newsletter } from '@/presentation/components/Newsletter';
 
 import styles from './styles.module.scss';
+import { Navigate } from 'react-router-dom';
 
 export const Setting: FunctionComponent = () => {
   const [active, SetActive] = React.useState(false);
   const [color, SetColor] = React.useState(false);
+  const [adm, SetAdm] = React.useState(false);
   const [newsletter, SetNewsletter] = React.useState(false);
 
   function handlerActive() {
@@ -20,8 +22,13 @@ export const Setting: FunctionComponent = () => {
   function handlerNewsletter() {
     SetNewsletter(!newsletter);
   }
+  function handlerAdm() {
+    SetAdm(true);
+  }
 
-  return (
+  return adm ? (
+    <Navigate to="/login" replace={true} />
+  ) : (
     <div className={styles.container}>
       <div className={styles.content}>
         <button className={styles.button} onClick={handlerActive}>
@@ -29,7 +36,7 @@ export const Setting: FunctionComponent = () => {
         </button>
         <ul className={active ? `${styles.content_list} ${styles.active}` : styles.content_list}>
           <li className={styles.action_container}>
-            <button className={styles.action}>
+            <button className={styles.action} onClick={handlerAdm}>
               <i className="ri-admin-fill"></i>
             </button>
           </li>
