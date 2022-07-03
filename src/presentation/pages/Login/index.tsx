@@ -1,3 +1,4 @@
+import { Form } from '@/presentation/components/Form';
 import React, { FunctionComponent } from 'react';
 
 //import styles from './styles.module.css';
@@ -5,7 +6,7 @@ import React, { FunctionComponent } from 'react';
 export const Login: FunctionComponent = () => {
   return (
     <div>
-      <h2>Login</h2>
+      <Form />
     </div>
   );
 };
