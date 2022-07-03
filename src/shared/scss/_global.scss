@@ -64,11 +64,14 @@ button {
 .container {
   max-width: 868px;
   margin: 0 auto;
+  padding-left: var(--mb-1-5);
+  padding-right: var(--mb-1-5);
 }
 @media screen and (max-width: 768px) {
   .container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+    padding: 0px;
   }
 }
 
