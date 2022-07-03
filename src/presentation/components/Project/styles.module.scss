@@ -36,6 +36,7 @@
   padding: 0.5em;
   border-radius: 0.3rem;
   > input {
+    width: 100%;
     font-size: var(--normal-font-size);
     color: var(--text-color);
     padding: 0.2rem;
@@ -76,11 +77,12 @@
   border-radius: 0.4rem;
   padding: 0.4rem 0px;
   transition: 0.2s;
-  transform-origin: right top;
+  transform-origin: bottom left;
   opacity: 0;
   visibility: hidden;
   transform: scale(0.8) translateZ(0px);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+
   > span {
     color: var(--first-color);
     padding: 1rem;
@@ -110,9 +112,8 @@
   width: 25ch;
   left: 0px;
   top: 2rem;
-  z-index: 999;
   transition: 0.2s;
-  transform-origin: left bottom;
+  transform-origin: bottom left;
   @media screen and (max-width: 680px) {
     top: -9rem;
   }
@@ -121,13 +122,13 @@
   transform: scale(0.8) translateZ(0px);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
   background: var(--body-color);
+
   > span {
     display: block;
     width: 1rem;
     height: 1rem;
     transform: rotate(45deg);
     background-color: var(--first-color);
-    z-index: -11;
   }
   > p {
     padding: 0.8rem;
@@ -144,7 +145,7 @@
   transform: none;
 }
 .showModalQues {
-  transform-origin: left top;
+  transform-origin: left bottom;
   opacity: 1;
   visibility: visible;
   transform: none;
