@@ -10,10 +10,11 @@ export const Hero: FunctionComponent = () => {
   const index = currentDate.getDay();
   let week = weeks[index];
 
+
   return (
     <section className={`${styles.hero} section`}>
       <div className={styles.container}>
-        <span className={styles.happy}>Happy {week}!</span>
+        <span className={styles.happy}>Happy {weeks[new Date().getDay()]}!</span>
         <span className={styles.hello}> </span>
         <h1 className={styles.name}>I am Yazalde Filimone</h1>
         <span className={styles.work}>
