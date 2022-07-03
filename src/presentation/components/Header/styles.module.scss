@@ -1,10 +1,14 @@
-// .header {
-//   // backdrop-filter: saturate(180%) blur(20px);
+.header {
+  //   // backdrop-filter: saturate(180%) blur(20px);
 
-//   // backdrop-filter: saturate(180%) blur(15px);
-//   // border-bottom: 1px solid rgba(204, 204, 204, 0.2);
-// }
-
+  //   // backdrop-filter: saturate(180%) blur(15px);
+  //   // border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+  @media screen and (max-width: 768px) {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+    padding: 0px;
+  }
+}
 .nav {
   display: flex;
   align-items: center;
@@ -30,6 +34,7 @@
     align-items: flex-start;
     width: 200px;
     background: var(--bg-color);
+    z-index: 4;
     padding: 0.8rem;
     // box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.5);
     border: 1px solid var(--text-color);

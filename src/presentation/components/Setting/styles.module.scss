@@ -31,6 +31,7 @@
   display: flex;
   position: absolute;
   bottom: 3.5rem;
+  left: 0rem;
   flex-direction: column;
   align-items: center;
   background-color: var(--body-color);
@@ -43,17 +44,8 @@
   visibility: hidden;
   transform: scale(0.8) translateZ(0px);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
-  > li {
-    button {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      i {
-        font-size: 1.3rem;
-        color: #fff;
-      }
-    }
-  }
+}
+.list {
 }
 .action {
   > i {
@@ -69,4 +61,19 @@
   opacity: 1;
   visibility: visible;
   transform: none;
+}
+.action_container {
+  position: relative;
+  > button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    i {
+      font-size: 1.3rem;
+      color: #fff;
+    }
+  }
+}
+.actionColor {
+  color: var(--first-color) !important;
 }

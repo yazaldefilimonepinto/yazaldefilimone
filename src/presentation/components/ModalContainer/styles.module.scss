@@ -1,0 +1,16 @@
+.container {
+  z-index: 5;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+.active {
+  display: flex;
+}
