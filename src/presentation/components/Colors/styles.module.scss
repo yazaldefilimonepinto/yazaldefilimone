@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 0.3rem;
+  border: 1px solid var(--text-color);
+  padding: 0.5rem;
+  background-color: var(--body-color);
+  right: 3rem;
+  top: 0px;
+  border-radius: 0.3rem;
+  transition: 0.2s;
+  transform-origin: left right;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8) translateZ(0px);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
+.color {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.active {
+  transform-origin: left right;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
